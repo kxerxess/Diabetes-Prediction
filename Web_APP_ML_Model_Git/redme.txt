@@ -1,0 +1,10 @@
+Before running install latest python
+
+Install all python libraries used in py_script.py
+
+Install and set up nodejs with npm
+
+To install nodejs modules requied in the app 
+Open hyper terminal in the same directory as app.js 
+type 'npm install' in the hyper terminal
+
