@@ -1,0 +1,38 @@
+<%-include('partials/header');-%>
+<div class="container">
+  <div class="formBox">
+
+    <div class="boxHeading">
+      <h4>Input Correct Numerical Data</h4>
+    </div>
+    <hr>
+    <form class="form" id="InputForm" action="/" method="post" autocomplete="off">
+
+      <label for="input1" class="col-form-label">Pregnencies (Number of times pregnant)</label>
+      <input type="number" step="any" class="form-control" id="input1" name="input" required>
+
+      <label for="input2" class="col-form-label">Glucose (Plasma glucose concentration)</label>
+      <input type="number" step="any" class="form-control" id="input2" name="input" required>
+
+      <label for="input3" class="col-form-label">Blood Pressure (mm Hg)</label>
+      <input type="number" step="any" class="form-control" id="input3" name="input" required>
+
+      <label for="input4" class="col-form-label">Skin Thickness (mm)</label>
+      <input type="number" step="any" class="form-control" id="input4" name="input" required>
+
+      <label for="input5" class="col-form-label">Insulin (mu U/ml)</label>
+      <input type="number"step="any" class="form-control" id="input5" name="input" required>
+
+      <label for="input6" class="col-form-label">BMI (weight in kg/(height in m)^2)</label>
+      <input type="number" step="any" class="form-control" id="input6" name="input" required>
+
+      <label for="input7" class="col-form-label">Age (years)</label>
+      <input type="number" step="any" class="form-control" id="input7" name="input" required>
+
+    </form>
+    
+    <button class="btn btn-primary" form="InputForm" type="submit">Submit</button>
+
+  </div>
+</div>
+<%-include('partials/footer');-%>
