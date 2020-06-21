@@ -1,4 +1,5 @@
-body{
+body {
+  font-family: 'Montserrat', sans-serif;
   color: #393e46;
   background-color: #fcf8f3;
 }
@@ -9,31 +10,29 @@ body{
 }
 
 #content-wrap {
-  padding-bottom: 100px;    /* Footer height */
+  /*same as footer height*/
+  padding-bottom: 150px;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  background-color: #f0f0f0;         /* Footer height */
-}
-.footer p{
-  color: #888888;
-  padding-top: 40px;
-}
-
-.navbarMain{
+/******************************************Nav Bar******************************************/
+.navbarMain {
   padding: 40px 50px;
   color: #393e46;
   background-color: #f0f0f0;
 }
 
-.formBox{
-  width: 400px;
-  margin:50px auto 50px;
+.nav-item {
+  color: #888888;
+}
+
+.nav-item:hover {
+  color: #393e46;
+}
+
+/******************************************App Body******************************************/
+.formBox {
+  width: 500px;
+  margin: 50px auto 50px;
   background-color: white;
   border-width: 1px 1px 1px 1px;
   border-style: solid;
@@ -41,36 +40,58 @@ body{
   border-radius: 5px 5px 5px 5px;
   padding-bottom: 10px;
   padding: 30px 10px 10px;
-  box-shadow: 0 2px 2px rgba(10,16,20,.24),0 0 2px rgba(10,16,20,.12);
+  box-shadow: 0 2px 2px rgba(10, 16, 20, .24), 0 0 2px rgba(10, 16, 20, .12);
 }
-.form{
+
+.form {
   margin: 10px 0;
 }
 
-button{
+button {
   margin-top: 10px;
 }
 
-.boxHeading{
+.boxHeading {
   text-align: center;
   margin-bottom: 30px;
 }
-.resultText{
+
+.resultText {
   text-align: center;
 }
+
 .resultText h6 {
   color: #01a9b4;
   margin: 35px;
 }
 
-/*For Chrome*/
+/*******For Chrome********/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/*For Mozilla*/
+/******For Mozilla******/
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+/******************************************footer******************************************/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.footer-item {
+  color: #888888;
+  padding-top: 40px;
+}
+
+.footer-item p {
+  padding-top: 20px;
 }

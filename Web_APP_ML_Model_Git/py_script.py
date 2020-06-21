@@ -3,11 +3,13 @@ import pandas as pd
 import pickle
 import joblib
 
+
+#loading scaler and ml model
 scaler_loaded = joblib.load("Scaler/Scaler_MinMax_0_1.pkl")
 rfc_loaded = joblib.load("Trained_Models/Model_RandomForestClassifier_88.pkl")
 
 
-
+#converting input data to float
 input_data_str = sys.argv[1]
 input_data_float= []
 x = input_data_str.split(',')
@@ -17,7 +19,7 @@ for i in x:
 input_data_float = [input_data_float]
 
 
-
+#adding additional features(f0-f13)
 label= ["Pregnancies","Glucose","BloodPressure","SkinThickness","Insulin","BMI","Age"]
 data = pd.DataFrame(input_data_float, columns=label)
 # f0

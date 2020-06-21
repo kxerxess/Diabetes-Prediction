@@ -8,6 +8,7 @@ const {
 const _ = require('lodash');
 const app = express();
 
+
 /**********************************************SET/USE************************************************/
 
 app.use(express.static("public"));
@@ -32,18 +33,17 @@ app.post("/", function(req, res) {
   for (i = 0; i < inputData.length; i++) {
     inputData_toNumber.push(_.toNumber(inputData[i]))
   }
-  console.log("Data sent to python: " + inputData_toNumber)
+  console.log("Data sent to python script: " + inputData_toNumber)
 
 
-  var spawn = require("child_process").spawn;
-  var process = spawn('python', ["py_script.py",
+  const spawn = require("child_process").spawn;
+  const process = spawn('python', ["py_script.py",
     inputData_toNumber
   ]);
 
   process.stdout.on('data', function(data) {
-    console.log('Pipe data from python script ...');
     result_ = data.toString()
-    console.log(result_);
+    console.log('Pipe data from python script: ' + result_);
 
     app.get("/result", function(req, res) {
       res.render("result", {
@@ -52,10 +52,11 @@ app.post("/", function(req, res) {
     });
     res.redirect("/result")
     process.on('close', (code) => {
-      console.log(`child process close all stdio with code ${code}`);
+      console.log('child process close all stdio with code ' + code);
     });
   });
 });
+
 
 /**********************************************Listen************************************************/
 
