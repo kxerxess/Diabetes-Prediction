@@ -2,7 +2,7 @@
 
 This is a project that aims to build a smart, versatile app that can predict the probbability of diabetes in a person using basic information.
 
-This Machine Learning Project involves mainly 7 steps:
+This Machine Learning Project involves mainly 8 steps:
 1. Deciding the title
 2. Collection of Data
 3. Data Cleaning
