@@ -12,5 +12,3 @@ This Machine Learning Project involves mainly 8 steps:
 7. Deploying the model
 8. Building a front-end application, open for the users.
 
-
-
