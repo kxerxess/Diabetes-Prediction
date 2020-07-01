@@ -1,7 +1,7 @@
 ## Setup instructions
 
 Setting up files to run **py_script.py**
-> Install latest python.
+> Install latest python 64-bit.
 
 > Install python packages
 >- pandas
