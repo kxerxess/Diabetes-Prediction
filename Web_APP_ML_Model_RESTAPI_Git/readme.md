@@ -1,7 +1,7 @@
 ## Setup instructions
 
 Setting up files to run **api.py**
-> Install latest python.
+> Install latest python 64-bit.
 
 > Install python packages
 >- pandas
@@ -12,7 +12,7 @@ Setting up files to run **api.py**
 Setting up files to run **app.js**
 > Install Nodejs, Hyper terminal and set them up for running web applications.
 
-> To install packages used in **app.js** open hyper terminal in same directory as **app.js** use command.
+> To install packages used in *app.js* open hyper terminal in same directory as *app.js* use command.
 > ```bash
 > npm install
 > ```
