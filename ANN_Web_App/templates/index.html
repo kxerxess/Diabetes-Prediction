@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/predict" method="POST">
+
+        <label for="pregnancies">Pregnancies:</label><br>
+        <input type="number" id="pregnancies" name="pregnancies"><br>
+
+        <label for="glucose">Glucose:</label><br>
+        <input type="number" step="any" id="glucose" name="glucose"><br>
+
+        <label for="blpressure">Blood Pressure Diastolic:</label><br>
+        <input type="number" step="any" id="blpressure" name="blpressure"><br>
+
+        <label for="skthickness">Skin Thickness:</label><br>
+        <input type="number" step="any" id="skthickness" name="skthickness"><br>
+
+        <label for="insulin">Insulin:</label><br>
+        <input type="number" step="any" id="insulin" name="insulin"><br>
+
+        <label for="bmi">BMI:</label><br>
+        <input type="number" step="any" id="bmi" name="bmi"><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br>
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br><br>
+    {{prediction}}
+    <br><br><br>
+    {{accuracy}}
+</body>
+
+</html>
