@@ -17,7 +17,6 @@ def load_model_prereq():
     # with open('trained_models/final_model.pkl', 'rb') as f:
     #     model = pickle.load(f)
     model = tensorflow.keras.models.load_model('trained_models/TF_128x128x32x32_bs16_rms_200e_rs154_acc90.h5')
-    print(model.summary())
     with open('scaler/scaler.pkl', 'rb') as f:
         scaler = pickle.load(f)
 
@@ -130,7 +129,7 @@ def get_prediction():
     elif pred<=0.5:
         result='Non-Diabetic'
         accuracy=(1-pred)*100
-    return render_template("index.html", prediction=str(result), accuracy=accuracy[0][0])
+    return render_template("result.html", prediction=str(result), accuracy=accuracy[0][0])
 
 
 if __name__ == '__main__':

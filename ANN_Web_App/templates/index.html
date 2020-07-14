@@ -5,39 +5,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- CSS HERE -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+    <link rel="stylesheet" href="../static/styles/style.css">
 </head>
 
 <body>
-    <form action="/predict" method="POST">
+    <div class="heading">
+    </div>
+    <div class="main">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="info">
+                    <h1>
+                        What is Diabetes?
+                    </h1>
+                    <p>Diabetes is a chronic condition associated with abnormally high levels of sugar (glucose) in the
+                        blood. Insulin produced by the pancreas lowers blood glucose. Absence or insufficient production
+                        of insulin, or an inability of the body to properly use insulin causes diabetes</p>
+                    <h2>Symptoms of Diabetes:</h2>
+                    <ul>
+                        <li>Excessive thirst</li>
+                        <li>Frequent urination</li>
+                        <li>Fatigue</li>
+                        <li>Losing weight without trying to</li>
+                        <li>Blurred vision</li>
+                        <li>Slow healing sores</li>
+                        <li>Frequent infections</li>
+                        <li>Tingling in your hands or feet</li>
+                        <li>Red, swollen, or tender gums</li>
+                        <li>Chronically dry, itchy skin</li>
+                        <li>Patches of darkened skin in the folds and creases of your body</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="predictor">
+                    <h2>Do you have Diabetes?</h2>
+                    <form action="/predict" method="POST">
 
-        <label for="pregnancies">Pregnancies:</label><br>
-        <input type="number" id="pregnancies" name="pregnancies"><br>
+                        <div class="form-group row">
+                            <label for="pregnancies" class="col-sm-2 col-form-label">Pregnancies:</label>
+                            <div class="col-sm-10">
+                                <input type="number" step="1" class="form-control" id="pregnancies" name="pregnancies"
+                                    placeholder="Number of Pregnancies" required>
+                            </div>
+                        </div>
 
-        <label for="glucose">Glucose:</label><br>
-        <input type="number" step="any" id="glucose" name="glucose"><br>
+                        <div class="form-group row">
+                            <label for="glucose" class="col-sm-2 col-form-label">Glucose:</label>
+                            <div class="col-sm-10">
+                                <input type="number" step="any" class="form-control" id="glucose" name="glucose"
+                                    placeholder="Glucose" required>
+                            </div>
+                        </div>
 
-        <label for="blpressure">Blood Pressure Diastolic:</label><br>
-        <input type="number" step="any" id="blpressure" name="blpressure"><br>
+                        <div class="form-group row">
+                            <label for="bpd" class="col-sm-2 col-form-label">Blood Pressure:</label>
+                            <div class="col-sm-10">
+                                <input type="number" step="any" class="form-control" id="bpd" name="bpd"
+                                    placeholder="Diastolic Blood Pressure" required>
+                            </div>
+                        </div>
 
-        <label for="skthickness">Skin Thickness:</label><br>
-        <input type="number" step="any" id="skthickness" name="skthickness"><br>
+                        <div class="form-group row">
+                            <label for="skt" class="col-sm-2 col-form-label">Skin Thickness:</label>
+                            <div class="col-sm-10">
+                                <input type="number" step="any" class="form-control" id="skt" name="skt"
+                                    placeholder="Skin Thickness" required>
+                            </div>
+                        </div>
 
-        <label for="insulin">Insulin:</label><br>
-        <input type="number" step="any" id="insulin" name="insulin"><br>
+                        <div class="form-group row">
+                            <label for="insulin" class="col-sm-2 col-form-label">Insulin:</label>
+                            <div class="col-sm-10">
+                                <input type="number" step="any" class="form-control" id="insulin" name="insulin"
+                                    placeholder="Insulin" required>
+                            </div>
+                        </div>
 
-        <label for="bmi">BMI:</label><br>
-        <input type="number" step="any" id="bmi" name="bmi"><br>
+                        <div class="form-group row">
+                            <label for="bmi" class="col-sm-2 col-form-label">BMI:</label>
+                            <div class="col-sm-10">
+                                <input type="number" step="any" class="form-control" id="bmi" name="bmi" placeholder="BMI"
+                                    required>
+                            </div>
+                        </div>
 
-        <label for="age">Age:</label><br>
-        <input type="number" id="age" name="age"><br>
+                        <div class="form-group row">
+                            <label for="age" class="col-sm-2 col-form-label">Age:</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="age" name="age" placeholder="Age" required>
+                            </div>
+                        </div>
 
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-    <br><br><br>
-    {{prediction}}
-    <br><br><br>
-    {{accuracy}}
+                        <br>
+                        <input type="submit" class="btn btn-primary" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
 </body>
 
 </html>
