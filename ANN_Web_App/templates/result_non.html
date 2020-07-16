@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+
+    <!-- CSS HERE -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style_result.css') }}">
+    <link rel="stylesheet" href="../static/styles/style_result.css">
+</head>
+
+<body>
+    <main>
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="gif" src="../static/res/happy.gif" alt="Italian Trulli">
+            </div>
+            <div class="col-sm-6 result">
+                <p>According to the data received, you are:</p>
+                <h1 class="negdiab">{{prediction}}</h1>
+                <p>With an accuracy of:</p>
+                <h1 class="acc">{{accuracy}}%</h1>
+            </div>
+            <a href="./">Back to Home</a>
+        </div>
+        <br><br>
+        <div class="treatment">
+            <h2>Recommended:</h2>
+            <p>Kindly take necessary steps to prevent it in the future. <br>
+                The best prevention plan starts with talking to your doctor about your personal risk of developing
+                diabetes. You may be at an increased risk if you:
+                <ul>
+                    <li>Have prediabetes</li>
+                    <li>Are overweight</li>
+                    <li>Are 45 or older</li>
+                    <li>Take part in physical activity less than three times a week</li>
+                    <li>Have a parent or sibling with type 2 diabetes</li>
+                    <li>Have had gestational diabetes or given birth to a baby who weighed more than 9 pounds</li>
+                    <li>Have polycystic ovary syndrome</li>
+                    <li>Have high blood pressure, low HDL (“good”) cholesterol, or high triglyceride levels</li>
+                </ul>
+                <br><br>
+                <h3>PREVENTION:</h3>
+                <ul>
+                    <li>Get at least 150 minutes per week of aerobic exercise, such as walking or cycling.</li>
+                    <li>Cut saturated and trans fats, along with refined carbohydrates, out of your diet.</li>
+                    <li>Eat more fruits, vegetables, and whole grains.</li>
+                    <li>Eat smaller portions.</li>
+                    <li>Try to lose 7 percentTrusted Source of your body weight if you’re overweight or obese.</li>
+                </ul>
+            </p>
+        </div>
+    </main>
+    <div class="footer">
+        <span>This website is designed as a part of the Summer Internship Programme at Ramrao Adik Institute of
+            Technology, Nerul.</span>
+        <br>
+        <span>Contributors:</span>
+        <span>Kaustubh Sharma, Kimaya Ganveer, Adarsh Poddar, Simran Singh</span>
+        <br>
+        <span>All Rights Reserved.</span>
+    </div>
+</body>
+
+</html>

@@ -124,12 +124,14 @@ def get_prediction():
     pred = model.predict(final_val)
 
     if pred>0.5:
-        result='Diabetic'
+        result='DIABETIC'
         accuracy=pred*100
+        return render_template("result_diabetic.html", prediction=str(result), accuracy=accuracy[0][0])
     elif pred<=0.5:
-        result='Non-Diabetic'
+        result='NOT DIABETIC'
         accuracy=(1-pred)*100
-    return render_template("result.html", prediction=str(result), accuracy=accuracy[0][0])
+        return render_template("result_non.html", prediction=str(result), accuracy=accuracy[0][0])
+    return None
 
 
 if __name__ == '__main__':

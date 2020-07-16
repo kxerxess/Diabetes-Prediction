@@ -1,5 +1,5 @@
 body {
-    background-color: #B2DFDB;
+    background-color: #37474F;
 }
 
 .row {
@@ -9,31 +9,37 @@ body {
 .info h1 {
     text-align: center;
     padding: 2rem 0 1rem 0;
+    color: #4dd0e1;
 }
 
 .info p {
     padding: 0 0 1rem 0;
     font-size: 1.1rem;
     text-align: center;
+    color: #bdbdbd;
 }
 
 .info h2 {
     text-align: center;
     padding: 0 0 1rem 0;
+    color: #4dd0e1;
 }
 
 .info ul{
     font-size: 1.1rem;
     margin: 0 0 0 2rem;
+    color: #bdbdbd;
 }
 
 .predictor h2{
     padding: 2rem 0 2rem 0;
     text-align: center;
+    color: #4dd0e1;
 }
 
 .predictor .form-group {
     padding-left: 4rem;
+    color: #bdbdbd;
 }
 
 .form-control {
@@ -42,6 +48,14 @@ body {
 }
 
 .btn {
-    margin: 0 0 0 10rem;
+    margin: 0 0 0 20rem;
+    background-color: #4DD0E1;
+    color: #424242;
 }
 
+.footer {
+    background-color: #f5f5f5;
+    color: #121212;
+    padding: 8vh 0;
+    text-align: center;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+
+    <!-- CSS HERE -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style_result.css') }}">
+    <link rel="stylesheet" href="../static/styles/style_result.css">
+</head>
+
+<body>
+    <main>
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="gif" src="../static/res/sorry.gif" alt="Italian Trulli">
+            </div>
+            <div class="col-sm-6 result">
+                <p>According to the data received, you are:</p>
+                <h1 class="posdiab">{{prediction}}</h1>
+                <p>With an accuracy of:</p>
+                <h1 class="acc">{{accuracy}}%</h1>
+            </div>
+            <a href="./">Back to Home</a>
+        </div>
+        <br><br>
+        <div class="treatment">
+            <h2>Recommended:</h2>
+            <p>Kindly contact your doctor immediately for taking necessary future steps. <br>
+                In order to keep your blood sugar levels steady, try to eat small meals throughout the day. Emphasize
+                healthy foods such as:
+                <ul>
+                    <li>Fruits</li>
+                    <li>Vegetables</li>
+                    <li>Whole grains</li>
+                    <li>Lean protein such as poultry and fish</li>
+                    <li>Healthy fats such as olive oil and nuts</li>
+                </ul>
+                <br><br>
+                <h3>TREATMENT:</h3>
+                <ul>
+                    <li>Weight loss.</li>
+                    <li>Healthy eating.</li>
+                    <li>Regular exercise.</li>
+                    <li>Possibly, diabetes medication or insulin therapy.</li>
+                    <li>Blood sugar monitoring.</li>
+                </ul>
+            </p>
+        </div>
+    </main>
+    <div class="footer">
+        <span>This website is designed as a part of the Summer Internship Programme at Ramrao Adik Institute of
+            Technology, Nerul.</span>
+        <br>
+        <span>Contributors:</span>
+        <span>Kaustubh Sharma, Kimaya Ganveer, Adarsh Poddar, Simran Singh</span>
+        <br>
+        <span>All Rights Reserved.</span>
+    </div>
+</body>
+
+</html>

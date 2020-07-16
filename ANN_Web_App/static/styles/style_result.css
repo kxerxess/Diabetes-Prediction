@@ -1,0 +1,50 @@
+body {
+    background-color: #ECEEF4;
+    color: #121212;
+}
+
+main {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+.result {
+    font-size: 2rem;
+    padding: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.gif {
+    height: 70vh;
+}
+
+.posdiab {
+    color: red;
+}
+
+.negdiab {
+    color: green;
+}
+
+.acc {
+    color: blue;
+}
+
+a {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.treatment {
+    font-size: 1.5rem;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    color: #121212;
+    padding: 8vh 0;
+    text-align: center;
+}
